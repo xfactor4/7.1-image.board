@@ -1,12 +1,31 @@
-import BooksCollection from 'models/books-collection';
-import CreateBookView from 'views/books/create';
+import imageCollection from 'models/image-collection';
+import textCollection from 'models/text-collection';
+import CreateView from 'views/create-view';
+import ImagesListView from 'views/list';
+import ButtonView from 'views/button';
+import CreateTextView from 'views/createText-view';
 
-window.App = {};
+
+
 
 $(document).ready(function(){
-  App.books = new BooksCollection();
 
-  window.createBookView = new CreateBookView();
-  $('#container').append(createBookView.render().el);
-  
+  var texts = new textCollection();
+  var images = new imageCollection();
+
+  var buttonView = new ButtonView({collection: images});
+  $('.header').append(buttonView.render().el);
+
+  var createView = new CreateView({collection: images});
+  $('.drop').append(createView.render().el);
+
+  var imagesListView = new ImagesListView({collection: images});
+  $('#container').append(imagesListView.render().el);
+
+
+
+  images.add([
+
+  ]);
+
 });

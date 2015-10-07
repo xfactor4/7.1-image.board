@@ -15,7 +15,145 @@ $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
 
 body {
-  background-color: $base-background-color;
+  background-color: #35455D;
   color: $base-font-color;
   font-family: $base-font-family;
+  margin: 0;
+}
+
+.title {
+  position: absolute;
+  width: 820px;
+  margin-left: 120px;
+  bottom: 450px;;
+  height: 50px;
+}
+
+.post {
+  position: relative;
+  width: 820px;
+  bottom: 120px;
+  margin-left: 120px;
+}
+.post-button {
+  position: relative;
+  bottom: 80px;
+  right: 170px;
+}
+
+.delete-button {
+  position: relative;
+  bottom: 80px;
+  right: 180px;
+}
+
+
+.createText-View {
+  margin: 0 auto;
+  padding: 20px 10px;
+  display: block;
+}
+
+.create-view {
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: block;
+}
+
+.header {
+  height: 50px;
+  background-color: red;
+
+}
+
+#accordian li {
+  list-style-type: none;
+}
+
+
+
+.url {
+  margin-left: 90px;
+  width: 820px;
+  height: 50px;
+}
+
+.content {
+  margin-left: 90px;
+  margin-top: 20px;
+  width: 820px;
+}
+
+.submit-button {
+ float: right;
+ display: block;
+ position: relative;
+ left: 130px;
+ margin-top: 20px;
+}
+
+.cancel-button {
+  margin-top: 20px;
+position: relative;
+left: 730px;
+}
+
+#accordian {
+  width: 820px;
+
+}
+
+#container {
+  margin-top: 20%;
+}
+
+.imgSize {
+  height: 500px;
+  width: 600px;
+ margin-left: 20%;
+ margin-top: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.header {
+  background-color: #35455D;
+  height: 50px;
+  border-bottom: 1px solid gray;
+}
+
+.js-toggle-hidden{
+  color: white;
+}
+
+.header button{
+background-color: #35455D;
+ height: 50px;
+ width: 50px;
+ border-bottom: 1px solid gray;
+}
+
+.delete {
+  margin-left: 63%;
+}
+
+.caption{
+  margin-left: 20%;
+  color: black;
+  height: 100px;
+  background-color: white;
+  width: 600px;
+  text-align: center;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.fa {
+
+
 }
